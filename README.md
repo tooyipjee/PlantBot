@@ -19,8 +19,6 @@
 -->
 
 [![MIT License][license-shield]][license-url]
-[![Website][website-shield]][elektrothing.com]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
