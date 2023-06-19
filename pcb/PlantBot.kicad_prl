@@ -41,7 +41,6 @@
       11,
       12,
       13,
-      14,
       15,
       16,
       17,
@@ -62,13 +61,15 @@
       33,
       34,
       35,
-      36
+      36,
+      39,
+      40
     ],
-    "visible_layers": "000fffa_80000001",
-    "zone_display_mode": 0
+    "visible_layers": "001f0ff_80000001",
+    "zone_display_mode": 1
   },
   "meta": {
-    "filename": "Grower.kicad_prl",
+    "filename": "PlantBot.kicad_prl",
     "version": 3
   },
   "project": {

@@ -1086,45 +1086,6 @@
         )
       )
     )
-    (symbol "personal:DNF_0805" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 0.762 0.508 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "DNF_0805" (at 0.762 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "DNF_0805_0_1"
-        (rectangle (start -0.762 1.778) (end 0.762 -1.778)
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "DNF_0805_1_1"
-        (pin passive line (at 0 2.54 270) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "personal:SB_NC" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "JP" (at 0 2.032 0)
         (effects (font (size 1.27 1.27)))
@@ -1544,23 +1505,11 @@
     (stroke (width 0) (type default))
     (uuid 3619714f-8eab-41aa-99e9-3b0e8cf30d6f)
   )
-  (polyline (pts (xy 60.96 212.725) (xy 60.96 161.29))
-    (stroke (width 0) (type default))
-    (uuid 3631ade2-4004-4dd4-81cd-fc77c1073262)
-  )
   (polyline (pts (xy 123.317 142.367) (xy 47.879 142.367))
     (stroke (width 0) (type default))
     (uuid 371258fd-d2bc-41cb-a29e-0432e4c534ef)
   )
 
-  (wire (pts (xy 71.755 194.31) (xy 78.74 194.31))
-    (stroke (width 0) (type default))
-    (uuid 3ee7be96-43b9-4453-8b59-ad43c1c57ad6)
-  )
-  (wire (pts (xy 92.075 190.5) (xy 92.075 194.31))
-    (stroke (width 0) (type default))
-    (uuid 3f327f3e-9c88-4ce8-98c5-a0eb1864f527)
-  )
   (wire (pts (xy 258.445 95.885) (xy 258.445 102.235))
     (stroke (width 0) (type default))
     (uuid 426c0bcb-4c69-4197-803b-ded07b86602f)
@@ -1727,11 +1676,6 @@
     (stroke (width 0) (type default))
     (uuid 9e6e2e5d-ba87-4810-a02c-2eef08ef1b5a)
   )
-  (polyline (pts (xy 107.95 161.29) (xy 107.95 212.725))
-    (stroke (width 0) (type default))
-    (uuid a027fd7b-4c75-4432-bc7d-7e529cfb8b94)
-  )
-
   (wire (pts (xy 281.305 153.035) (xy 306.07 153.035))
     (stroke (width 0) (type default))
     (uuid a2f81ff0-ed6b-439a-a483-c8922b364a3b)
@@ -1762,10 +1706,6 @@
     (stroke (width 0) (type default))
     (uuid af1fbbc5-8085-4c13-b97d-2da335bc6ef1)
   )
-  (wire (pts (xy 71.755 190.5) (xy 71.755 194.31))
-    (stroke (width 0) (type default))
-    (uuid b0690cc9-0fa9-48ff-9516-902622b67690)
-  )
   (wire (pts (xy 56.515 102.616) (xy 56.515 100.33))
     (stroke (width 0) (type default))
     (uuid b1001493-c47f-45ad-beae-42da5ecdab67)
@@ -1785,10 +1725,6 @@
   (wire (pts (xy 306.07 150.495) (xy 306.07 153.035))
     (stroke (width 0) (type default))
     (uuid bdef4c27-75a4-4874-aa81-d2317865be52)
-  )
-  (wire (pts (xy 83.82 194.31) (xy 92.075 194.31))
-    (stroke (width 0) (type default))
-    (uuid befde507-970c-4c43-8519-70444652e5ca)
   )
   (wire (pts (xy 321.945 111.76) (xy 325.755 111.76))
     (stroke (width 0) (type default))
@@ -1819,11 +1755,6 @@
     (stroke (width 0) (type default))
     (uuid c7a45c2e-cd90-4d6f-aac2-aa9888a3f948)
   )
-  (polyline (pts (xy 107.95 212.725) (xy 60.96 212.725))
-    (stroke (width 0) (type default))
-    (uuid c9152c95-cac6-4244-96da-82369b38a31c)
-  )
-
   (wire (pts (xy 291.465 121.92) (xy 243.84 121.92))
     (stroke (width 0) (type default))
     (uuid cc31348f-c5aa-4af6-86ba-06d19bb601fe)
@@ -1885,11 +1816,6 @@
     (stroke (width 0) (type default))
     (uuid e444b9e4-b549-4f3b-b3c3-dcf170bf855a)
   )
-  (polyline (pts (xy 60.96 161.29) (xy 107.95 161.29))
-    (stroke (width 0) (type default))
-    (uuid e58e6786-442d-4f84-8769-705c408b76f4)
-  )
-
   (wire (pts (xy 328.295 121.92) (xy 328.295 120.65))
     (stroke (width 0) (type default))
     (uuid e5ced7ee-daa4-4e3c-b13b-341352baa3dd)
@@ -1931,18 +1857,10 @@
     (uuid ff2776b5-934f-4ae9-b9a2-304bed6c8f1c)
   )
 
-  (text "Charger Bypass" (at 69.85 176.53 0)
-    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
-    (uuid 31309e7b-61f0-42c8-97bd-dbd685bc104a)
-  )
   (text "Connect ~CE to a low logic level \nto enable the battery charger"
     (at 343.535 107.315 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3e8c1755-53b2-48d4-8826-c2e2b6b77da1)
-  )
-  (text "Remove Charger 0 Ohm link first!" (at 66.675 203.2 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid a89d7458-cd47-44e0-9e4d-4f597a81dda4)
   )
   (text "TD - Connect TD to VSS to enable\ncharger termination."
     (at 343.535 100.965 0)
@@ -1987,7 +1905,7 @@
     (pin "1" (uuid f96bf979-38a9-4a68-9756-f7f51f919cbf))
     (pin "2" (uuid b685389d-bd4c-482c-ab56-2c95d04dbfe2))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R21") (unit 1)
         )
@@ -2016,7 +1934,7 @@
     (pin "1" (uuid 7d78c052-1098-4580-a98d-3043091cab4e))
     (pin "2" (uuid dfb36977-98ef-40b5-824c-697cbf9bf5e9))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R12") (unit 1)
         )
@@ -2045,7 +1963,7 @@
     (pin "1" (uuid 7300b2bc-7b96-4d33-b0d5-d80c9836b402))
     (pin "2" (uuid 27c0ff26-3c70-4a6a-abde-54fae1b8f896))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R17") (unit 1)
         )
@@ -2074,7 +1992,7 @@
     (pin "1" (uuid d319aba9-9834-42cf-86ec-f357eb46f421))
     (pin "2" (uuid 2fcc30b2-c42b-4b12-a05d-74a7ac7e2b4e))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "D2") (unit 1)
         )
@@ -2109,7 +2027,7 @@
     (pin "1" (uuid 7a03a71b-d20b-4948-b29e-366fd20df124))
     (pin "2" (uuid a41d3657-4b4c-4392-b3b7-dc681aafbd90))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "C10") (unit 1)
         )
@@ -2135,7 +2053,7 @@
     (pin "1" (uuid facc7a1b-48f7-432d-8c99-461c31468767))
     (pin "2" (uuid 46fd1604-52c4-4275-97de-e76c2fafee1c))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "JP1") (unit 1)
         )
@@ -2160,7 +2078,7 @@
     )
     (pin "1" (uuid f1e91d81-a946-405b-9b83-9f2953e9ddde))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0104") (unit 1)
         )
@@ -2185,7 +2103,7 @@
     )
     (pin "1" (uuid bf852334-db50-4c72-8950-46968df0008d))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0105") (unit 1)
         )
@@ -2214,7 +2132,7 @@
     (pin "1" (uuid 62572e48-123e-40e3-bbac-e4ee3d41f626))
     (pin "2" (uuid 003a5141-e200-4e63-b032-3dc8d3c60607))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R15") (unit 1)
         )
@@ -2239,35 +2157,9 @@
     )
     (pin "1" (uuid cd465fe2-5541-4e71-ae1e-8af5e74b8b85))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0108") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "personal:DNF_0805") (at 81.28 194.31 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3ae3fbd7-43c3-40f9-ba93-33b016cd17e5)
-    (property "Reference" "R27" (at 81.28 189.6069 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DNF_0805" (at 81.28 192.382 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 81.28 194.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 81.28 194.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2ffab9c3-5c7a-4d55-af94-9f9bd8be80ab))
-    (pin "2" (uuid 235f67bf-0f50-4ac6-b7c0-564c2d019217))
-    (instances
-      (project "Grower"
-        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
-          (reference "R27") (unit 1)
         )
       )
     )
@@ -2290,7 +2182,7 @@
     )
     (pin "1" (uuid 1b9f4534-38b4-487e-b49c-bb5ac6c93ee4))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0119") (unit 1)
         )
@@ -2315,7 +2207,7 @@
     )
     (pin "1" (uuid e2f7d8f5-90bb-4abc-857e-618fd25d1c77))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0101") (unit 1)
         )
@@ -2340,7 +2232,7 @@
     )
     (pin "1" (uuid 39dd521d-c0d3-4dc3-9f04-954364f19b5c))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0124") (unit 1)
         )
@@ -2369,7 +2261,7 @@
     (pin "1" (uuid d3b8749b-0343-4585-9f00-a03939998e0b))
     (pin "2" (uuid 72540fc0-1e45-4057-a327-3dfa1053bf1f))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R23") (unit 1)
         )
@@ -2394,34 +2286,9 @@
     )
     (pin "1" (uuid 49ac9e23-54e7-4773-8f0f-2ee697168f53))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0121") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 71.755 190.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 66f4530e-08ee-40bf-ac10-c820cb0959c7)
-    (property "Reference" "#PWR0125" (at 71.755 194.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 71.755 186.8955 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 71.755 190.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 71.755 190.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ca501b1a-8326-463a-8b72-a1c168f4f69b))
-    (instances
-      (project "Grower"
-        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
-          (reference "#PWR0125") (unit 1)
         )
       )
     )
@@ -2478,7 +2345,7 @@
     (pin "1" (uuid da3e2231-9041-46ca-9eac-5ece659d4471))
     (pin "2" (uuid d3c1020a-4d36-42c9-ada2-4a24b1e09752))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "U3") (unit 1)
         )
@@ -2507,7 +2374,7 @@
     (pin "1" (uuid 4185b86f-0d8c-4ad7-81c4-87296115a37f))
     (pin "2" (uuid 05285fae-2491-4b86-897a-6b73f0a46c2f))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R24") (unit 1)
         )
@@ -2539,7 +2406,7 @@
     (pin "1" (uuid fc4a78a3-2b83-49ae-9d60-331c64076e51))
     (pin "2" (uuid ba30663a-3b77-4793-9355-2d783a3b2165))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "TH1") (unit 1)
         )
@@ -2564,7 +2431,7 @@
     )
     (pin "1" (uuid 78287693-9d5c-499d-a3f1-ffe0b50d8202))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0127") (unit 1)
         )
@@ -2589,7 +2456,7 @@
     )
     (pin "1" (uuid 8c3195a4-8eb2-45fc-bacb-a575492d919d))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0117") (unit 1)
         )
@@ -2624,7 +2491,7 @@
     (pin "1" (uuid 5aec6bc3-7c3c-4004-818c-0d00927712c4))
     (pin "2" (uuid 8ceb396d-2ea4-4fff-8718-46976ff94685))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "C7") (unit 1)
         )
@@ -2653,7 +2520,7 @@
     (pin "1" (uuid b7b036e7-4872-46ae-a0c6-9b371587b62b))
     (pin "2" (uuid a42eef8a-9f16-4370-9419-ac9e3d142e41))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R16") (unit 1)
         )
@@ -2688,7 +2555,7 @@
     (pin "1" (uuid df5b36fd-1343-47a4-a4a3-3ef9e4129842))
     (pin "2" (uuid d52bb720-1e73-44b5-9c23-13bf9933ad27))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "C17") (unit 1)
         )
@@ -2713,34 +2580,9 @@
     )
     (pin "1" (uuid da8f8dba-4066-4b08-b6eb-e186cd845181))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0126") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VDD") (at 92.075 190.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 9be0b10d-6bca-48d2-ba72-ee015a4156c6)
-    (property "Reference" "#PWR0143" (at 92.075 194.31 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VDD" (at 92.075 186.8955 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 92.075 190.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 92.075 190.5 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f0d7ac3b-f6cd-4c23-ad20-cb3586cc6f21))
-    (instances
-      (project "Grower"
-        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
-          (reference "#PWR0143") (unit 1)
         )
       )
     )
@@ -2767,7 +2609,7 @@
     (pin "1" (uuid 27d061a4-cc4e-4de2-abd0-21572cf3fc5b))
     (pin "2" (uuid 29057096-4d36-4834-977b-990a9ea2c1f5))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R26") (unit 1)
         )
@@ -2796,7 +2638,7 @@
     (pin "1" (uuid 4d1ab872-f8f3-4b56-86c0-5452d8546b68))
     (pin "2" (uuid 8362adaf-b752-4b35-8e99-d7521988d632))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R20") (unit 1)
         )
@@ -2825,7 +2667,7 @@
     (pin "1" (uuid 772c83c3-73ca-4051-a045-2c526311cf9a))
     (pin "2" (uuid 692d495f-f602-407e-b047-422552437b93))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "D3") (unit 1)
         )
@@ -2881,7 +2723,7 @@
     (pin "4" (uuid 06a06772-7310-4023-bd48-13baa39ae5f3))
     (pin "5" (uuid 79c6cac0-5840-4cda-a441-f05c37e00771))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "IC3") (unit 1)
         )
@@ -2910,7 +2752,7 @@
     (pin "1" (uuid 64d1d610-c9a6-49cc-b6c8-22c879eac4f2))
     (pin "2" (uuid 3ee2b695-7c4b-47c0-b95c-7371e3a5bae0))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R18") (unit 1)
         )
@@ -2939,7 +2781,7 @@
     (pin "1" (uuid e4c301b0-e749-47a6-a9a3-0b1eb30d407f))
     (pin "2" (uuid 73705345-6e11-4248-9cc1-92ebbf9f5f84))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "D6") (unit 1)
         )
@@ -2964,7 +2806,7 @@
     )
     (pin "1" (uuid f128a288-edd1-438b-88a6-55b11d16fdd1))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "#PWR0123") (unit 1)
         )
@@ -2993,7 +2835,7 @@
     (pin "1" (uuid f921da92-75c1-4813-8aa1-f8aa1b39217e))
     (pin "2" (uuid 6c860aa8-afd9-4c61-8bb9-8f8733506aaa))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R25") (unit 1)
         )
@@ -3022,7 +2864,7 @@
     (pin "1" (uuid a0a2c20d-5703-42f1-a187-4340af186ca7))
     (pin "2" (uuid f2a890da-4680-40ce-b207-f4f38e533c52))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R28") (unit 1)
         )
@@ -3051,7 +2893,7 @@
     (pin "1" (uuid f00fc153-8132-470c-8b59-e412e5eef208))
     (pin "2" (uuid 38bd7b48-4303-4aa7-a016-9ad33e8bbfdc))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "R14") (unit 1)
         )
@@ -3080,7 +2922,7 @@
     (pin "1" (uuid adac1f8d-e413-4700-9f5f-fbfab10988f8))
     (pin "2" (uuid 98a52c4b-8cc8-4de9-be94-1f84a59c92e1))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "D5") (unit 1)
         )
@@ -3154,7 +2996,7 @@
     (pin "8" (uuid ee6b7aa3-7991-4de7-8d1a-1a3b368ade6e))
     (pin "9" (uuid 75e9e66a-0aeb-4564-ac6b-d8a7c1390935))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "IC6") (unit 1)
         )
@@ -3189,7 +3031,7 @@
     (pin "1" (uuid bec93a40-ad33-4fa0-92fb-4ca10bab1930))
     (pin "2" (uuid eb3b7877-3340-48ad-9497-86acaa9db2b8))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/732cf7f1-1497-49fb-9df9-283f13bc9404"
           (reference "C18") (unit 1)
         )

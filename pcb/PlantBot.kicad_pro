@@ -429,7 +429,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Grower.kicad_pro",
+    "filename": "PlantBot.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -529,7 +529,7 @@
       "idf": "",
       "netlist": "lcGrower_A.net",
       "specctra_dsn": "",
-      "step": "Grower.step",
+      "step": "production/Grower.step",
       "vrml": ""
     },
     "page_layout_descr_file": "$KICAD_ONEDRIVE/Title Template.kicad_wks"

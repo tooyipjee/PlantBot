@@ -68,38 +68,38 @@
         )
       )
     )
-    (symbol "Capacitor_JLC:10u" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
+    (symbol "Capacitor_JLC:10u_0402" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 3.175 3.175 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "10u" (at 0.635 -2.54 0)
+      (property "Value" "10u_0402" (at 3.175 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 0.9652 -3.81 0)
+      (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 32.385 -1.905 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Type" "X5R" (at 5.08 2.54 0)
+      (property "Type" "X5R" (at 5.08 -3.175 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "LCSC" "C15850" (at 0 0 0)
+      (property "LCSC" "C315248" (at 19.685 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Voltage" "25V" (at 5.08 0 0)
+      (property "Voltage" "10V" (at 5.08 -1.27 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "ki_keywords" "cap capacitor" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
+      (property "ki_description" "10V 10uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "C_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "10u_0_1"
+      (symbol "10u_0402_0_1"
         (polyline
           (pts
             (xy -2.032 -0.762)
@@ -117,7 +117,7 @@
           (fill (type none))
         )
       )
-      (symbol "10u_1_1"
+      (symbol "10u_0402_1_1"
         (pin passive line (at 0 3.81 270) (length 2.794)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -528,10 +528,6 @@
     (uuid 05987538-b1bc-4955-b41c-17e4c17d5526)
   )
 
-  (wire (pts (xy 272.415 153.67) (xy 272.415 156.21))
-    (stroke (width 0) (type default))
-    (uuid 2353a855-890a-400a-a780-199eeed5d180)
-  )
   (wire (pts (xy 339.725 134.62) (xy 339.725 142.24))
     (stroke (width 0) (type default))
     (uuid 24aaba07-16e9-4afe-ae5e-ff2bf945f9fe)
@@ -560,6 +556,10 @@
   (wire (pts (xy 233.045 151.13) (xy 235.585 151.13))
     (stroke (width 0) (type default))
     (uuid 5574e8bb-4b66-4b83-9411-31b005cf15ec)
+  )
+  (wire (pts (xy 260.985 156.21) (xy 277.495 156.21))
+    (stroke (width 0) (type default))
+    (uuid 591de907-0cc0-4536-b1be-418a8cb46856)
   )
   (wire (pts (xy 336.55 165.1) (xy 336.55 167.005))
     (stroke (width 0) (type default))
@@ -594,14 +594,6 @@
     (stroke (width 0) (type default))
     (uuid 87151cbb-6da7-4c29-8997-ea6f913b0295)
   )
-  (wire (pts (xy 272.415 144.78) (xy 260.985 144.78))
-    (stroke (width 0) (type default))
-    (uuid 89234f85-002e-457a-9f2b-b4e0ea3734d0)
-  )
-  (wire (pts (xy 272.415 156.21) (xy 260.985 156.21))
-    (stroke (width 0) (type default))
-    (uuid 8f794f43-c972-46c9-bef9-7125cef63dd1)
-  )
   (wire (pts (xy 233.045 162.56) (xy 260.985 162.56))
     (stroke (width 0) (type default))
     (uuid 917baa9e-a1ac-4c67-a762-b6c6cf4f207d)
@@ -618,14 +610,18 @@
     (stroke (width 0) (type default))
     (uuid a28a1689-89cc-4604-9576-69dc32497351)
   )
+  (wire (pts (xy 277.495 153.67) (xy 277.495 156.21))
+    (stroke (width 0) (type default))
+    (uuid a8d5123e-759a-40b6-b3b3-151073710638)
+  )
   (polyline (pts (xy 285.496 180.594) (xy 170.688 180.594))
     (stroke (width 0) (type default))
     (uuid acd9ae90-401c-4c81-9bd3-11a59c97c35b)
   )
 
-  (wire (pts (xy 272.415 146.05) (xy 272.415 144.78))
+  (wire (pts (xy 277.495 146.05) (xy 277.495 144.78))
     (stroke (width 0) (type default))
-    (uuid b36be2b5-e471-4cb4-bbac-23b6a0118beb)
+    (uuid b6375aea-c73b-4f73-9491-d691fa560d33)
   )
   (wire (pts (xy 260.985 153.67) (xy 260.985 156.21))
     (stroke (width 0) (type default))
@@ -652,6 +648,10 @@
     (uuid cbcfbde9-a250-4689-86b5-c3c590c0fa61)
   )
 
+  (wire (pts (xy 260.985 144.78) (xy 277.495 144.78))
+    (stroke (width 0) (type default))
+    (uuid cdd7ac1d-9032-45e2-ab43-d30a7bc38d43)
+  )
   (wire (pts (xy 180.975 137.16) (xy 188.595 137.16))
     (stroke (width 0) (type default))
     (uuid cf867ca7-5a13-4524-a58b-716372e2289d)
@@ -754,44 +754,9 @@
     )
     (pin "1" (uuid bb916b0c-ebd1-402c-bcbd-905e03f8c955))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "#PWR0122") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Capacitor_JLC:10u") (at 260.985 149.86 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 16cb0b0e-5228-4fe4-b0c8-318281e267c2)
-    (property "Reference" "C12" (at 263.906 146.1764 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10u" (at 263.906 148.9515 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 261.9502 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 260.985 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Type" "X5R" (at 263.906 151.7266 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "LCSC" "C15850" (at 260.985 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Voltage" "25V" (at 263.906 154.5017 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (pin "1" (uuid c5e6356a-6ff9-4d3e-87b8-2db7cc980b64))
-    (pin "2" (uuid 91dda16f-f6ba-47f8-b9ff-bca5dbff204d))
-    (instances
-      (project "Grower"
-        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
-          (reference "C12") (unit 1)
         )
       )
     )
@@ -849,7 +814,7 @@
     (pin "8" (uuid 5e5d5176-6131-4561-aed0-77c39d8ef012))
     (pin "9" (uuid 85a718cd-5240-447e-8784-d2ec0711dc04))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "IC4") (unit 1)
         )
@@ -874,7 +839,7 @@
     )
     (pin "1" (uuid e7d2b7b7-19c6-4dbc-9a68-f9798141f1bc))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "#PWR0129") (unit 1)
         )
@@ -906,44 +871,9 @@
     (pin "1" (uuid 38c16bcc-2efe-4d16-a53b-51c092ad40ce))
     (pin "2" (uuid 4b758277-4627-4ab7-b3b9-254f311419b2))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "C11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Capacitor_JLC:10u") (at 272.415 149.86 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3dadfe80-aa2c-4ebe-90f6-b3b281c7c270)
-    (property "Reference" "C13" (at 275.336 146.1764 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "10u" (at 275.336 148.9515 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 273.3802 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 272.415 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Type" "X5R" (at 275.336 151.7266 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "LCSC" "C15850" (at 272.415 149.86 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Voltage" "25V" (at 275.336 154.5017 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (pin "1" (uuid 5ff627ca-c02f-412a-8997-3dbae33ae5f3))
-    (pin "2" (uuid 83d057a7-242e-4e31-948d-fbf95083960a))
-    (instances
-      (project "Grower"
-        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
-          (reference "C13") (unit 1)
         )
       )
     )
@@ -966,7 +896,7 @@
     )
     (pin "1" (uuid 6d75c047-e812-494c-bad6-fdce6b5e805f))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "#PWR0131") (unit 1)
         )
@@ -995,7 +925,7 @@
     (pin "1" (uuid f007b235-eefe-4e22-a2d2-6e780547e2b4))
     (pin "2" (uuid 473c2e2a-9927-45bd-a767-ac2ed8a782d1))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "D9") (unit 1)
         )
@@ -1020,7 +950,7 @@
     )
     (pin "1" (uuid 2f4de506-9229-43a0-82ee-eed9ae31024f))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "#PWR0130") (unit 1)
         )
@@ -1049,9 +979,44 @@
     (pin "1" (uuid afb27458-b163-4f20-908f-0a88e1883e94))
     (pin "2" (uuid 7fbd2070-8c6c-4c9b-83ce-62e0461ac5ca))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "R29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Capacitor_JLC:10u_0402") (at 260.985 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 867e092b-088a-42ba-ac32-65775ba86a86)
+    (property "Reference" "C8" (at 263.906 147.2953 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u_0402" (at 263.906 149.2163 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 293.37 151.765 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 260.985 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Type" "X5R" (at 263.906 151.1373 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "LCSC" "C315248" (at 280.67 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Voltage" "10V" (at 263.906 153.0583 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid b1393c85-79d3-40b2-90c2-a7be9e92d9a3))
+    (pin "2" (uuid 6ea3726e-48c4-490b-b4c2-fcaf0394e8ae))
+    (instances
+      (project "PlantBot"
+        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -1078,7 +1043,7 @@
     (pin "1" (uuid 66d6735d-8ba3-4f1c-ba67-f8c4616ddf1c))
     (pin "2" (uuid f88c4e2c-2e9e-432e-8d39-ce4c7a88b737))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "R30") (unit 1)
         )
@@ -1103,7 +1068,7 @@
     )
     (pin "1" (uuid ef80ec4a-e038-416e-b00d-bc3ee46df7d4))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "#PWR0144") (unit 1)
         )
@@ -1132,9 +1097,44 @@
     (pin "1" (uuid 12b7ae67-c6a0-4776-9e84-78e20a71111f))
     (pin "2" (uuid 92af3291-6fd9-49d4-bfbd-47c216e13aaf))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "D7") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Capacitor_JLC:10u_0402") (at 277.495 149.86 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c3d886d0-3f38-4022-99df-c0b199b72d72)
+    (property "Reference" "C9" (at 280.416 147.2953 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u_0402" (at 280.416 149.2163 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 309.88 151.765 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 277.495 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Type" "X5R" (at 280.416 151.1373 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "LCSC" "C315248" (at 297.18 149.86 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Voltage" "10V" (at 280.416 153.0583 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (pin "1" (uuid 6d3abf8f-a723-40c8-af00-fa201bf7d795))
+    (pin "2" (uuid 5a40571a-3ff2-46a3-9df0-4f6649170be5))
+    (instances
+      (project "PlantBot"
+        (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -1157,7 +1157,7 @@
     )
     (pin "1" (uuid 8761c216-6a19-4e65-9def-76e901bab871))
     (instances
-      (project "Grower"
+      (project "PlantBot"
         (path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/11ddc7da-b07f-4cec-87b3-82aa721f8223"
           (reference "#PWR0128") (unit 1)
         )
