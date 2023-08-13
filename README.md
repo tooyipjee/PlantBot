@@ -1,6 +1,6 @@
 # Plant Bot: Automate Plant Care 🌱
 
-![Top-down view of the Plant Bot device.](./images/Top Down.jpg)
+![Top Down View.](./images/Top Down.jpg)
 
 ## High-Level Summary
 
