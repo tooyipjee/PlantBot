@@ -1,7 +1,7 @@
 # Plant Bot: Automate Plant Care 🌱
 
 <p align="center">
-<img src="./images/Top Down.jpg" width="550" height="650"/>
+<img src="./images/Top Down.jpg" width="600" height="800"/>
 </p>
 
 ## High-Level Summary
@@ -37,7 +37,7 @@ The sample code provided showcases Plant Bot's capabilities in measuring soil mo
 Harness the power of Plant Bot's low-power design to connect your plants to the internet wirelessly. Demos are available that allow Plant Bot to send Telegram notifications or relay measurements to IoT platforms. With efficient power consumption, a single coin cell battery can last up to a week with daily updates.
 
 <p align="center">
-<img src="./images/Telegram.jpg" width="450" height="650"/>
+<img src="./images/Telegram.jpg" width="600" height="800"/>
 </p>
 
 ---
