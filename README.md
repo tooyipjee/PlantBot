@@ -1,12 +1,14 @@
 # Plant Bot: Automate Plant Care 🌱
 
 <p align="center">
-<img src="./images/Top Down.jpg" width="800" height="600"/>
+<img src="./images/Top Down.jpg" width="600" height="450"/>
 </p>
 
 ## High-Level Summary
 
 Plant Bot is a cutting-edge device designed to revolutionize plant care. Powered by USB, it seamlessly integrates into your pot, transforming it into an active participant in plant care. With features like a moisture sensor, integrated pump driver, and multi-color LED control, it's the ultimate companion for every plant enthusiast.
+
+Available on <a href="https://www.tindie.com/products/elektrothing/plant-bot/"><img src="https://d2ss6ovg47m0r5.cloudfront.net/images/tindie-logo@2x.png" width="100"></a>
 
 ---
 
