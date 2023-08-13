@@ -1,6 +1,8 @@
 # Plant Bot: Automate Plant Care 🌱
 
-![Top Down View.](./images/Top Down.jpg)
+<p align="center">
+<img src="./images/Top Down.jpg" width="250" height="250"/>
+</p>
 
 ## High-Level Summary
 
