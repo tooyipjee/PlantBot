@@ -1,93 +1,139 @@
-#include "plantBot_ws2812.h"
-#include "plantBot_sht20.h"
+#include "Freenove_WS2812_Lib_for_ESP32.h"
+#include <WiFiClientSecure.h>
+#include <UniversalTelegramBot.h>
+#include "credentials.h"
+// RemoteXY select connection mode and include library 
+#define REMOTEXY_MODE__ESP32CORE_BLE
+#include <BLEDevice.h>
 
-//  PIN ASSIGNMENTS
-int led_sig = 3;
-int sig_read = 4;
-int sig = 7;
-int sda = 19;
-int scl = 18;
-int in1 = 0;
-int in2 = 1;
-//int capstr = 2;
-int neo_pin = 2;
-int blk = 5;
-//  VARIABLES
-int col = 0;
-int cycle_time = 2000; //ms
-int last_switch_ts = 0;
-bool pumpOn = false;
+#include <RemoteXY.h>
 
+// RemoteXY connection settings 
+#define REMOTEXY_BLUETOOTH_NAME "Plant-Bot"
+
+
+// RemoteXY configurate  
+#pragma pack(push, 1)
+uint8_t RemoteXY_CONF[] =   // 79 bytes
+  { 255,2,0,2,0,72,0,16,31,1,129,0,3,8,57,6,0,76,105,103,
+  104,116,32,32,32,77,111,105,115,116,32,84,104,114,101,115,104,0,66,1,
+  7,17,7,16,13,26,66,1,27,17,7,16,176,26,4,0,45,16,7,18,
+  2,26,2,0,37,42,22,11,2,26,31,31,79,78,0,79,70,70,0 };
+  
+// this structure defines all the variables and events of your control interface 
+struct {
+
+    // input variables
+  int8_t Threshold = 50; // =0..100 slider position 
+  uint8_t PumpDirection; // =1 if switch ON and =0 if OFF 
+
+    // output variables
+  int8_t Light; // =0..100 level position 
+  int8_t Moisture; // =0..100 level position 
+
+    // other variable
+  uint8_t connect_flag;  // =1 if wire connected, else =0 
+
+} RemoteXY;
+#pragma pack(pop)
+#define LIGHT_SIG 0
+#define LIGHT_PWR 2
+#define MOISTURE_SIG 4
+#define IND_LED 5
+#define MOTOR_IN1 6
+#define MOTOR_IN2 7
+#define WS2812 10
+
+#define LEDS_COUNT 1
 //  PERIPHERALS
-plantBot_ws2812 strip = plantBot_ws2812(15, neo_pin, 0, TYPE_GRB);
-plantBot_sht20 sht20(&Wire, SHT20_I2C_ADDR);
+Freenove_ESP32_WS2812 strip = Freenove_ESP32_WS2812(1, WS2812, 0);
+WiFiClientSecure secured_client;
+UniversalTelegramBot bot(BOT_TOKEN, secured_client);
+bool messageSent = false;
+bool timedOut = false;
+int timeWatered = millis();
+void update();
+void setup() {
+// attempt to connect to Wifi network:
+  Serial.print("Connecting to Wifi SSID ");
+  Serial.print(WIFI_SSID);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(500);
+  }
+  Serial.print("\nWiFi connected. IP address: ");
+  Serial.println(WiFi.localIP());
 
-void setup()
-{
-  Serial.begin(115200); // The baudrate of Serial monitor is set in 9600
-  while (!Serial); // Waiting for Serial Monitor
-  pinMode(sig_read, INPUT);
-  pinMode(blk, OUTPUT);
-  pinMode(in1, OUTPUT);
-  pinMode(in2, OUTPUT);
+  RemoteXY_Init();
+
+  Serial.begin(115200);  // The baudrate of Serial monitor is set in 9600
   strip.begin();
-  strip.setBrightness(50);
+  strip.setBrightness(10);
 
-  sht20.initSHT20();
-  delay(100);
-  Serial.println("Sensor init finish!");
-  sht20.checkSHT20();
+  pinMode(LIGHT_SIG, INPUT);
+  pinMode(MOISTURE_SIG, INPUT);
+
+  pinMode(IND_LED, OUTPUT);
+  pinMode(MOTOR_IN1, OUTPUT);
+  pinMode(MOTOR_IN2, OUTPUT);
+  pinMode(LIGHT_PWR, OUTPUT);
+
+  digitalWrite(LIGHT_PWR, HIGH);
 }
 
-void loop()
-{
-  //  DEMO: NEOPIXEL
-  if (col < 255)
+void loop() {
+  update();
+
+
+  if(RemoteXY.Moisture < RemoteXY.Threshold && !timedOut)
   {
-    col += 1;
+    digitalWrite(MOTOR_IN1, !RemoteXY.PumpDirection);
+    digitalWrite(MOTOR_IN2, RemoteXY.PumpDirection);
+    digitalWrite(IND_LED, HIGH);
+    if(millis() > timeWatered + 60000)
+    {
+      timedOut = true;
+    }
   }
   else
   {
-    col = 0;
+    digitalWrite(MOTOR_IN1, LOW);
+    digitalWrite(MOTOR_IN2, LOW);
+    digitalWrite(IND_LED, LOW);
+    timeWatered = millis();
   }
+
+  if(!messageSent && timedOut)
+  {
+    bot.sendMessage(CHAT_ID, "I'm out of water!", "");
+    messageSent = true;
+  }
+
+
+}
+
+void update() {
+
+  RemoteXY_Handler();
+  RemoteXY.Light = analogRead(LIGHT_SIG) / 40.96;
+  delay(10);
+  //  SOIL MOISTURE SENSOR (0-100%)
+  RemoteXY.Moisture = 100 - 100.0 * (analogRead(MOISTURE_SIG) - 1800) / (2700 - 1800);  //mapping to max and min
+  if (abs(RemoteXY.Moisture) > 1000 || RemoteXY.Moisture < 1) {
+    RemoteXY.Moisture = 0;
+  }
+  Serial.print("Moist.: ");
+  Serial.print(RemoteXY.Moisture);
+  Serial.print(", Light: ");
+  Serial.println(RemoteXY.Light);
+  //  NEOPIXEL
+  int col = int(RemoteXY.Moisture * 160 / 100);
   strip.setLedColorData(0, strip.Wheel((0 / 1 + col) & 255));
   strip.show();
 
-  //  DEMO: SOIL MOISTURE SENSOR
-  int moisture = 100 - 100.0 * (analogRead(sig_read) - 1800) / (2700 - 1800); //mapping to max and min
 
-  //  DEMO: WATER PUMP (5VDC)
-  if (millis() > last_switch_ts + cycle_time && !pumpOn)
-  {
-    digitalWrite(in1, HIGH);
-    digitalWrite(in2, LOW);
-    pumpOn = true;
-    last_switch_ts = millis();
-  }
-  else if (millis() > last_switch_ts + cycle_time && pumpOn)
-  {
-    digitalWrite(in1, LOW);
-    digitalWrite(in2, HIGH);
-    pumpOn = false;
-    last_switch_ts = millis();
-  }
-  digitalWrite(blk,pumpOn);
-  digitalWrite(led_sig,HIGH);
 
-    //  DEMO: SHT20
-    float humd = sht20.readHumidity(); //Read the measured data of air humidity
-    float temp = sht20.readTemperature(); //Read the measured temp data
-
-    //  DEMO: PRINT OUTPUT
-    Serial.print(" Temperature:");
-    Serial.print(temp, 1);   // Only print one decimal place
-    //  Serial.print("C");
-    Serial.print(" Humidity:");
-    Serial.print(humd, 1);   // Only print one decimal place
-    //  Serial.print("%");
-    Serial.print(" Moisture:");
-    Serial.print(moisture, 1); //mapping to max and min
-    Serial.println();
-
-    delay(100);
 }
