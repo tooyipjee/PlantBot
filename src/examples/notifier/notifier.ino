@@ -1,12 +1,14 @@
 #include "Freenove_WS2812_Lib_for_ESP32.h"
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
-#include <WiFiManager.h> // https://github.com/tzapu/WiFiManager
+#include <WiFiManager.h>  // https://github.com/tzapu/WiFiManager
 #include "credentials.h"
 
 
 #define uS_TO_S_FACTOR 1000000ULL  /* Conversion factor for micro seconds to seconds */
-#define TIME_TO_SLEEP  60        /* Time ESP32 will go to sleep (in seconds) */
+#define TIME_TO_SLEEP  3600        /* Time ESP32 will go to sleep (in seconds) */
+
+RTC_DATA_ATTR int bootCount = 0;        /* Time ESP32 will go to sleep (in seconds) */
 #define LIGHT_SIG 0
 #define LIGHT_PWR 2
 #define MOISTURE_SIG 4
@@ -34,47 +36,44 @@ void setup() {
 
   pinMode(LIGHT_SIG, INPUT);
   pinMode(MOISTURE_SIG, INPUT);
-
+  pinMode(MOTOR_IN1, OUTPUT);
+  pinMode(MOTOR_IN2, OUTPUT);
   pinMode(IND_LED, OUTPUT);
-  pinMode(MOTOR_IN1, INPUT);
-  pinMode(MOTOR_IN2, INPUT);
+  pinMode(MOTOR_IN1, OUTPUT);
+  pinMode(MOTOR_IN2, OUTPUT);
   pinMode(LIGHT_PWR, OUTPUT);
-
-
   digitalWrite(LIGHT_PWR, HIGH);
+
+
+
   WiFi.mode(WIFI_STA);
   bool res;
-  res = wm.autoConnect("PlantBot_AP", "elektroThing"); // password protected app
+  res = wm.autoConnect("PlantBot_AP", "elektroThing");  // password protected app
   if (!res) {
-  Serial.println("Failed to connect");
-  wm.setConfigPortalTimeout(60);
-  ESP.restart();
-}
-  secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
+    Serial.println("Failed to connect");
+    wm.setConfigPortalTimeout(60);
+    ESP.restart();
+  }
+  secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT);  // Add root certificate for api.telegram.org
+  update();
+  bot.sendMessage(CHAT_ID, "Light: " + String(Light) + ", Moist:" + String(Moisture), "");
+
+
+  ++bootCount;
+  Serial.println("Boot number: " + String(bootCount));
+  digitalWrite(MOTOR_IN1, LOW);
+  digitalWrite(MOTOR_IN2, LOW);
+  esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
+  Serial.println("Setup ESP32 to sleep for every " + String(TIME_TO_SLEEP) +
+  " Seconds");
+  Serial.println("Going to sleep now");
+  Serial.flush(); 
+  esp_deep_sleep_start();
+  Serial.println("This will never be printed");
 
 }
 
 void loop() {
-  update();
-
-  bot.sendMessage(CHAT_ID,"Light: " + String(Light) + ", Moist:" + String(Moisture), "");
-  if(Moisture < 50 && !messageSent)
-  {
-
-  bot.sendMessage(CHAT_ID, "I'm out of water!", "");
-  messageSent = true;
-  }
-  else
-  {
-    esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
-    Serial.println("Setup ESP32 to sleep for every " + String(TIME_TO_SLEEP) +
-    " Seconds");
-    Serial.println("Going to sleep now");
-    Serial.flush(); 
-    esp_deep_sleep_start();
-    Serial.println("This will never be printed");
-  }
-
 }
 
 void update() {
@@ -85,7 +84,7 @@ void update() {
   Light = analogRead(LIGHT_SIG) / 40.96;
   //  SOIL MOISTURE SENSOR (0-100%)
   Moisture = 100 - 100.0 * (analogRead(MOISTURE_SIG) - 1800) / (2700 - 1800);  //mapping to max and min
-  if (abs(Moisture) > 1000 || Moisture < 1) {
+  if (abs(Moisture) > 100 || Moisture < 1) {
     Moisture = 0;
   }
   Serial.print("Moist.: ");
@@ -94,6 +93,4 @@ void update() {
   Serial.println(Light);
   digitalWrite(LIGHT_PWR, LOW);
   digitalWrite(IND_LED, LOW);
-
-
 }
