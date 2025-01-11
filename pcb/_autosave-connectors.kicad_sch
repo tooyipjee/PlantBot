@@ -1,0 +1,460 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "94c4b2fa-9603-448e-af84-72cc7599d5aa")
+	(paper "A3")
+	(title_block
+		(title "Plant Bot")
+		(date "2022-12-10")
+		(rev "E")
+	)
+	(lib_symbols
+		(symbol "Connector_JLC:KF350-3.5-2P"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "KF350-3.5-2P"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "KF350352P"
+				(at 16.51 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/2001160007_Cixi-Kefa-Elec-KF350-3-5-2P_C474892.pdf"
+				(at 16.51 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "P=3.5mm Screw terminal RoHS 2 Pos"
+				(at 16.51 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Height" "8.8"
+				(at 16.51 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "CIXI KEFA ELECTRONICS"
+				(at 16.51 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "KF350-3.5-2P"
+				(at 16.51 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 16.51 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 16.51 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 16.51 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 16.51 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C474892"
+				(at 20.955 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "KF350-3.5-2P_0_0"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "KF350-3.5-2P_0_1"
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 15.24 2.54) (xy 15.24 -5.08) (xy 5.08 -5.08) (xy 5.08 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 186.436 159.512) (xy 191.516 159.512)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b2c2ac3-6811-4647-bf95-b20b5a825223")
+	)
+	(polyline
+		(pts
+			(xy 227.076 175.768) (xy 172.212 175.768)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "725e343e-97f4-4f41-99a4-8178c150cd14")
+	)
+	(polyline
+		(pts
+			(xy 172.212 175.768) (xy 172.212 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96147316-42a4-4ec4-846f-107ed63caa8a")
+	)
+	(wire
+		(pts
+			(xy 186.436 156.972) (xy 191.516 156.972)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b6d0cc7-d8f4-4169-a6f0-1ce499559f82")
+	)
+	(polyline
+		(pts
+			(xy 227.076 139.7) (xy 227.076 175.768)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9df708db-1ab5-4e87-8110-35e4fba7f2c8")
+	)
+	(polyline
+		(pts
+			(xy 191.008 139.7) (xy 227.076 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1a17dd3-43fe-462c-b9dd-91f61f4770dd")
+	)
+	(polyline
+		(pts
+			(xy 172.212 139.7) (xy 191.008 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef12ed21-7635-45c3-860f-aad6b9c29c84")
+	)
+	(text "PUMP"
+		(exclude_from_sim no)
+		(at 190.881 144.272 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e5fb3c8-8cde-432d-aaa0-9a543c2eb5ca")
+	)
+	(hierarchical_label "OUT_2"
+		(shape input)
+		(at 186.436 159.512 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4dc6bd0d-b056-4c46-949e-041f134c7731")
+	)
+	(hierarchical_label "OUT_1"
+		(shape input)
+		(at 186.436 156.972 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c2abccbb-3945-4b33-8050-98e62d5ac0de")
+	)
+	(symbol
+		(lib_id "Connector_JLC:KF350-3.5-2P")
+		(at 191.516 156.972 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86778abc-9194-451b-ada2-3207aa6dafd1")
+		(property "Reference" "J6"
+			(at 207.4672 157.3335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KF350-3.5-2P"
+			(at 207.4672 160.1086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "KF350352P"
+			(at 208.026 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/2001160007_Cixi-Kefa-Elec-KF350-3-5-2P_C474892.pdf"
+			(at 208.026 156.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "P=3.5mm Screw terminal RoHS 2 Pos"
+			(at 208.026 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.8"
+			(at 208.026 162.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "CIXI KEFA ELECTRONICS"
+			(at 208.026 164.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "KF350-3.5-2P"
+			(at 208.026 167.132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 208.026 169.672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 208.026 172.212 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 208.026 174.752 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 208.026 177.292 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C474892"
+			(at 212.471 169.672 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61e065fe-7f18-4dd6-80ba-1b70203fa25d")
+		)
+		(pin "2"
+			(uuid "bad72adf-91ac-4209-81d7-b1f5e75d5d5d")
+		)
+		(instances
+			(project "PlantBot"
+				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/832ce300-5dca-4ac6-8418-9701d8b58306"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
