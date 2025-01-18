@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "Plant Bot")
-		(date "2025-01-11")
+		(date "2025-01-13")
 		(rev "F")
 	)
 	(lib_symbols
@@ -2431,298 +2431,6 @@
 				)
 			)
 		)
-		(symbol "Switches_JLC:K3-1296S-E1"
-			(pin_names
-				(offset 0.762)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 21.59 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "K3-1296S-E1"
-				(at 21.59 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "K31296SE1"
-				(at 21.59 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/Korean-Hroparts-Elec-K3-1296S-E1_C128955.pdf"
-				(at 21.59 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Toggle Switches SMD RoHS"
-				(at 21.59 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Height" "1.6"
-				(at 21.59 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Korean Hroparts Elec"
-				(at 21.59 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "K3-1296S-E1"
-				(at 17.78 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C128955"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "C128955"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "K3-1296S-E1_0_0"
-				(pin passive line
-					(at 17.78 -13.97 180)
-					(length 5.08)
-					(name "MP1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -16.51 180)
-					(length 5.08)
-					(name "MP2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -19.05 180)
-					(length 5.08)
-					(name "MP3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -21.59 180)
-					(length 5.08)
-					(name "MP4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "K3-1296S-E1_0_1"
-				(rectangle
-					(start 5.08 -2.54)
-					(end 12.7 -24.13)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "K3-1296S-E1_1_1"
-				(polyline
-					(pts
-						(xy 7.366 -7.366) (xy 10.541 -5.334)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.858 -7.62)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 10.922 -10.16)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 10.922 -5.08)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 16.51 -5.08 180)
-					(length 5.08)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 1.27 -7.62 0)
-					(length 5.08)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 16.51 -10.16 180)
-					(length 5.08)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+BATT"
 			(power)
 			(pin_names
@@ -2989,12 +2697,6 @@
 		(uuid "351112eb-6557-4aa4-8eaf-d0c8f5490eb2")
 	)
 	(junction
-		(at 176.276 137.922)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "415fb827-bcf8-44be-a34c-af3686410d7e")
-	)
-	(junction
 		(at 123.571 150.622)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3037,6 +2739,12 @@
 		(uuid "c0ee635c-ac41-4eba-afbf-3d7a6e3d32c1")
 	)
 	(junction
+		(at 176.276 137.922)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3638d51-a7eb-43ae-87a5-3efaa53bcbc6")
+	)
+	(junction
 		(at 166.751 137.922)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3047,26 +2755,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dbf7fb3b-a457-472d-aa20-6bc9ce756251")
-	)
-	(no_connect
-		(at 202.946 139.827)
-		(uuid "16d3532f-6165-4024-8b49-3580111742cc")
-	)
-	(no_connect
-		(at 202.946 142.367)
-		(uuid "478f8b9d-1742-4381-a140-98b8d67d73ae")
-	)
-	(no_connect
-		(at 202.946 137.287)
-		(uuid "557367eb-f1d1-4f5f-b736-10dbe2972058")
-	)
-	(no_connect
-		(at 202.946 144.907)
-		(uuid "956408d3-42d0-47d7-9488-23491992860b")
-	)
-	(no_connect
-		(at 201.676 133.477)
-		(uuid "a5d886f8-d31a-4841-bbf3-4a35dcfc8111")
 	)
 	(wire
 		(pts
@@ -3127,16 +2815,6 @@
 			(type default)
 		)
 		(uuid "10e5193f-a632-466b-83a5-2dacbb7ef746")
-	)
-	(wire
-		(pts
-			(xy 201.676 128.397) (xy 206.756 128.397)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14f0c1dc-003a-4aa8-a987-b32a91315e5d")
 	)
 	(wire
 		(pts
@@ -3350,16 +3028,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.276 130.937) (xy 176.276 137.922)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cd3234c-ede9-4d55-b332-0cd77dcd0d99")
-	)
-	(wire
-		(pts
 			(xy 300.736 110.617) (xy 307.721 110.617)
 		)
 		(stroke
@@ -3417,6 +3085,16 @@
 			(type default)
 		)
 		(uuid "744b6775-f9b3-451d-a136-b8b12aee85cf")
+	)
+	(wire
+		(pts
+			(xy 191.77 131.064) (xy 176.276 131.064)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "751b7960-04ae-4e22-ab1e-689f78c2731f")
 	)
 	(wire
 		(pts
@@ -3487,6 +3165,16 @@
 			(type default)
 		)
 		(uuid "81e7c60b-f872-4551-b08a-8364ddaab8f0")
+	)
+	(wire
+		(pts
+			(xy 176.276 131.064) (xy 176.276 137.922)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82cc84bf-4108-46b3-a68f-420ef6245d47")
 	)
 	(wire
 		(pts
@@ -3647,16 +3335,6 @@
 			(type default)
 		)
 		(uuid "b9bd7db0-b4ce-4fd2-8d7d-43d71ef2fd8c")
-	)
-	(wire
-		(pts
-			(xy 186.436 130.937) (xy 176.276 130.937)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c465d5c2-2c0c-4313-988a-3109d11ba21c")
 	)
 	(wire
 		(pts
@@ -3923,7 +3601,7 @@
 	)
 	(hierarchical_label "VDD"
 		(shape input)
-		(at 206.756 128.397 0)
+		(at 191.77 131.064 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5531,131 +5209,6 @@
 			(project "PlantBot"
 				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/64bb1079-49be-4a7d-93cf-555cc5d3e35c"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switches_JLC:K3-1296S-E1")
-		(at 185.166 123.317 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87e9b746-ebf6-4809-b9df-e2945d1949b7")
-		(property "Reference" "S3"
-			(at 194.056 122.0175 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "K3-1296S-E1"
-			(at 194.056 124.7926 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "K31296SE1"
-			(at 206.756 120.777 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/Korean-Hroparts-Elec-K3-1296S-E1_C128955.pdf"
-			(at 206.756 123.317 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Toggle Switches SMD RoHS"
-			(at 206.756 125.857 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.6"
-			(at 206.756 128.397 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Korean Hroparts Elec"
-			(at 206.756 130.937 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "K3-1296S-E1"
-			(at 202.946 114.427 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C128955"
-			(at 185.166 123.317 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "MP1"
-			(uuid "d8b8668d-3549-4bd5-8a91-cac380d2bd9d")
-		)
-		(pin "MP2"
-			(uuid "72fd34fe-43a7-4c6c-ace5-bfd9142b6352")
-		)
-		(pin "MP3"
-			(uuid "8b39f37a-3d48-44b6-a5d0-1618ba06ad03")
-		)
-		(pin "MP4"
-			(uuid "8db4e172-010d-47e4-80cf-a96c7d4625fd")
-		)
-		(pin "1"
-			(uuid "2e207a74-ebb2-4198-81b8-d6c6d2425ed9")
-		)
-		(pin "2"
-			(uuid "39f26265-aa0f-429e-b174-ee2047f4388b")
-		)
-		(pin "3"
-			(uuid "a87c7a99-c2f5-40d6-bb92-979d5b846b8a")
-		)
-		(instances
-			(project "PlantBot"
-				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/64bb1079-49be-4a7d-93cf-555cc5d3e35c"
-					(reference "S3")
 					(unit 1)
 				)
 			)

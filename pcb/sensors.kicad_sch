@@ -6,10 +6,171 @@
 	(paper "A3")
 	(title_block
 		(title "Plant Bot")
-		(date "2025-01-11")
+		(date "2025-01-13")
 		(rev "F")
 	)
 	(lib_symbols
+		(symbol "100n_1"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.175 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100n"
+				(at 3.175 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at 32.385 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Type" "X7R"
+				(at 5.08 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C307331"
+				(at 19.685 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "100n_1_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "100n_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Capacitor_JLC:100n"
 			(pin_numbers hide)
 			(pin_names
@@ -863,6 +1024,102 @@
 				)
 			)
 			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "GND_2"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_2_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_2_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -2690,109 +2947,6 @@
 				)
 			)
 		)
-		(symbol "personal:TestPoint_Alt"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint_Alt"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point (alternative shape)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_Alt_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.762 3.302) (xy 0 4.064) (xy 0.762 3.302) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_Alt_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers hide)
@@ -3023,12 +3177,6 @@
 		(uuid "18291816-be3c-40e6-be35-001d210dfc20")
 	)
 	(junction
-		(at 144.78 215.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "19a29da1-2a31-46ac-ad26-33190f0a2c02")
-	)
-	(junction
 		(at 77.47 231.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3039,6 +3187,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2b695e54-bb15-4547-9754-51d5b1b1c1e7")
+	)
+	(junction
+		(at 273.304 99.568)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b19e5aa-88a2-4ebd-929e-ff165e304a98")
 	)
 	(junction
 		(at 58.42 210.82)
@@ -3168,7 +3322,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 215.9) (xy 144.78 215.9)
+			(xy 137.16 215.9) (xy 149.86 215.9)
 		)
 		(stroke
 			(width 0)
@@ -3218,6 +3372,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.304 89.916) (xy 273.304 99.568)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273e5338-ba22-46d9-8494-509a037c4547")
+	)
+	(wire
+		(pts
 			(xy 77.47 210.82) (xy 58.42 210.82)
 		)
 		(stroke
@@ -3225,6 +3389,16 @@
 			(type default)
 		)
 		(uuid "27e3a86c-dac5-41c5-8931-dcae8f70ad7d")
+	)
+	(wire
+		(pts
+			(xy 273.304 99.568) (xy 273.304 102.108)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d552d10-9208-4a6a-8151-ec2a47153520")
 	)
 	(wire
 		(pts
@@ -3296,16 +3470,6 @@
 		)
 		(uuid "528c2893-2933-4e51-bd20-35010db6f576")
 	)
-	(wire
-		(pts
-			(xy 144.78 215.9) (xy 149.86 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56155784-ef64-40aa-8355-0e77ba2aa86c")
-	)
 	(polyline
 		(pts
 			(xy 133.35 157.353) (xy 236.728 157.353)
@@ -3345,6 +3509,16 @@
 			(type default)
 		)
 		(uuid "63451273-0c98-4cf1-9561-7ad4debdf20d")
+	)
+	(wire
+		(pts
+			(xy 294.894 99.568) (xy 273.304 99.568)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "686c5848-6af4-459f-b355-b3f80411f3eb")
 	)
 	(wire
 		(pts
@@ -3388,16 +3562,6 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 99.568) (xy 294.894 99.568)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71dbedf5-798c-48ab-8d65-ed275d230cff")
-	)
-	(wire
-		(pts
 			(xy 107.95 210.82) (xy 110.49 210.82)
 		)
 		(stroke
@@ -3425,16 +3589,6 @@
 			(type default)
 		)
 		(uuid "789f0989-817b-436c-924d-aef26886904a")
-	)
-	(wire
-		(pts
-			(xy 281.94 87.376) (xy 281.94 99.568)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ab7660f-fb95-466f-91e5-1229f8130040")
 	)
 	(polyline
 		(pts
@@ -3595,16 +3749,6 @@
 			(type default)
 		)
 		(uuid "afba054a-7a3c-4c3f-b55c-05eef1326239")
-	)
-	(wire
-		(pts
-			(xy 144.78 228.6) (xy 144.78 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1216d90-c3ee-467c-94d6-b0701f4bd7a4")
 	)
 	(wire
 		(pts
@@ -3865,6 +4009,31 @@
 			(type default)
 		)
 		(uuid "fd098f1a-dcf0-45c0-a8c0-20698ddb4c1b")
+	)
+	(rectangle
+		(start 264.414 65.024)
+		(end 359.41 127.508)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid fbc9a62e-8077-48bb-901a-1da424cce99c)
+	)
+	(text "ENVIRONMENTAL SENSOR"
+		(exclude_from_sim no)
+		(at 283.718 76.454 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "07321a31-c6b5-44cd-adff-6a772bc452a7")
 	)
 	(text "CAP MOISTURE SENSOR"
 		(exclude_from_sim no)
@@ -4197,17 +4366,115 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_JLC:TEMT6000X01")
-		(at 195.707 108.585 0)
+		(lib_name "100n_1")
+		(lib_id "Capacitor_JLC:100n")
+		(at 273.304 105.918 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "4372ddd8-4950-47a1-aa95-c63b80895c8b")
+		(property "Reference" "C19"
+			(at 276.225 102.2815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 276.225 104.7058 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 305.689 107.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 273.304 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 273.304 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "X7R"
+			(at 276.225 107.1301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 292.989 105.918 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 276.225 109.5544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "94fa021d-0237-4ef4-8a3c-eda999f0b99b")
+		)
+		(pin "1"
+			(uuid "a5b54939-f639-430b-aab6-542b88dba235")
+		)
+		(instances
+			(project ""
+				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/f7f6ed9a-cbaf-45eb-ae82-3b25f0b048dd"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_JLC:TEMT6000X01")
+		(at 195.707 108.585 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "5250d8ef-47f9-480f-afa4-1468e3644466")
 		(property "Reference" "Q2"
-			(at 198.0184 102.112 0)
+			(at 193.3956 102.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4216,7 +4483,7 @@
 			)
 		)
 		(property "Value" "TEMT6000X01"
-			(at 198.0184 104.033 0)
+			(at 193.3956 104.033 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4492,7 @@
 			)
 		)
 		(property "Footprint" "TEMT6000X01"
-			(at 205.867 80.01 0)
+			(at 185.547 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4235,7 +4502,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/81579/temt6000.pdf"
-			(at 205.867 82.55 0)
+			(at 185.547 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4245,7 +4512,7 @@
 			)
 		)
 		(property "Description" "Ambient Light Sensor 570nm SMD3 Vishay TEMT6000X01 +/-60  Visible Light Phototransistor, Surface Mount 3-Pin 1206 package"
-			(at 205.867 85.09 0)
+			(at 185.547 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4255,7 +4522,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 205.867 87.63 0)
+			(at 185.547 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4532,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Vishay"
-			(at 205.867 90.17 0)
+			(at 185.547 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4275,7 +4542,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TEMT6000X01"
-			(at 205.867 92.71 0)
+			(at 185.547 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4285,7 +4552,7 @@
 			)
 		)
 		(property "Mouser Part Number" "78-TEMT6000"
-			(at 205.867 95.25 0)
+			(at 185.547 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4562,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Semiconductors/TEMT6000X01?qs=%2Fjqivxn91ccZGXDwz0wGxg%3D%3D"
-			(at 205.867 97.79 0)
+			(at 185.547 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4305,7 +4572,7 @@
 			)
 		)
 		(property "Arrow Part Number" "TEMT6000X01"
-			(at 205.867 100.33 0)
+			(at 185.547 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4315,7 +4582,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/temt6000x01/vishay?region=nac"
-			(at 205.867 102.87 0)
+			(at 185.547 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4325,7 +4592,7 @@
 			)
 		)
 		(property "Mouser Testing Part Number" ""
-			(at 205.867 105.41 0)
+			(at 185.547 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4335,7 +4602,7 @@
 			)
 		)
 		(property "Mouser Testing Price/Stock" ""
-			(at 205.867 107.95 0)
+			(at 185.547 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,7 +4612,7 @@
 			)
 		)
 		(property "LCSC" "C94098"
-			(at 209.677 87.63 0)
+			(at 181.737 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,73 +5191,6 @@
 			(project "PlantBot"
 				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/f7f6ed9a-cbaf-45eb-ae82-3b25f0b048dd"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "personal:TestPoint_Alt")
-		(at 144.78 228.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "788e1ab0-2d24-4fbf-8fd3-ef0c95485383")
-		(property "Reference" "TP4"
-			(at 146.177 230.9935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint_Alt"
-			(at 146.177 233.7686 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 139.7 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 144.78 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d0c8f919-c91b-4496-b4af-4b9fae47aecf")
-		)
-		(instances
-			(project "PlantBot"
-				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/f7f6ed9a-cbaf-45eb-ae82-3b25f0b048dd"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -5713,7 +5913,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 281.94 87.376 0)
+		(at 273.304 89.916 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5722,7 +5922,7 @@
 		(fields_autoplaced yes)
 		(uuid "b24f98e6-4e35-49f1-ab9d-a96522faac7d")
 		(property "Reference" "#PWR027"
-			(at 281.94 91.186 0)
+			(at 273.304 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5731,7 +5931,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 281.94 83.2429 0)
+			(at 273.304 85.7829 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5739,7 +5939,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 281.94 87.376 0)
+			(at 273.304 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5748,7 +5948,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 281.94 87.376 0)
+			(at 273.304 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5757,7 +5957,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 281.94 87.376 0)
+			(at 273.304 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6551,6 +6751,73 @@
 			(project ""
 				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/f7f6ed9a-cbaf-45eb-ae82-3b25f0b048dd"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_2")
+		(lib_id "power:GND")
+		(at 273.304 109.728 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6d6359e-c571-44a1-ac8f-8d9981857e81")
+		(property "Reference" "#PWR021"
+			(at 273.304 116.078 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.304 113.8611 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.304 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.304 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 273.304 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7e7f872-0a5f-4a99-b59a-849f9f8104f5")
+		)
+		(instances
+			(project ""
+				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/f7f6ed9a-cbaf-45eb-ae82-3b25f0b048dd"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
