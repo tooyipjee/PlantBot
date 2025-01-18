@@ -1356,150 +1356,6 @@
 				)
 			)
 		)
-		(symbol "Jumper:Jumper_2_Bridged"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_1"
-				(arc
-					(start 1.524 0.254)
-					(mid 0 0.762)
-					(end -1.524 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "MCU_JLC:ESP32-C6-MINI-1-N4"
 			(pin_names
 				(offset 0.762)
@@ -3364,16 +3220,16 @@
 		(uuid "9e663286-0cfe-49d6-918c-1b04542fc4c5")
 	)
 	(junction
-		(at 101.6 127.508)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1e93368-5ce9-4579-af32-1fd93d5e6816")
-	)
-	(junction
 		(at 132.08 178.308)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a7d2dd91-212d-4f8b-9428-394dc49dcd18")
+	)
+	(junction
+		(at 61.595 111.7026)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b34d8ecf-a4f1-4859-a2dd-b3cdca29d625")
 	)
 	(junction
 		(at 147.32 178.308)
@@ -3520,10 +3376,6 @@
 		(uuid "b6d5d672-71ea-4c5b-80c0-8d0900c9bf6d")
 	)
 	(no_connect
-		(at 114.3 142.748)
-		(uuid "d0310eaa-be8c-400d-8f68-8beea191b9e2")
-	)
-	(no_connect
 		(at 217.805 145.288)
 		(uuid "da18f42a-70bb-431d-9e50-c08cebd77a70")
 	)
@@ -3548,16 +3400,6 @@
 			(type default)
 		)
 		(uuid "00b6290f-9711-4b48-ae8f-1c418cfaef8a")
-	)
-	(wire
-		(pts
-			(xy 101.6 127.508) (xy 114.3 127.508)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03b7e5e4-742f-429a-a1f1-f8f411a64ef9")
 	)
 	(wire
 		(pts
@@ -3631,6 +3473,16 @@
 	)
 	(wire
 		(pts
+			(xy 61.595 111.7026) (xy 61.595 117.348)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f4d204c-0bf2-44cb-989a-62279e92e9c2")
+	)
+	(wire
+		(pts
 			(xy 193.04 178.308) (xy 195.58 178.308)
 		)
 		(stroke
@@ -3681,23 +3533,13 @@
 	)
 	(wire
 		(pts
-			(xy 61.595 111.633) (xy 61.595 117.348)
+			(xy 61.595 111.633) (xy 61.595 111.7026)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1f507e0e-bd25-49a2-8387-02f3cee738d2")
-	)
-	(wire
-		(pts
-			(xy 101.6 130.048) (xy 101.6 127.508)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "216f112a-2fbb-4964-bfa2-4c5ee381b10e")
 	)
 	(polyline
 		(pts
@@ -3821,6 +3663,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.926 111.7026) (xy 42.926 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f35aa5f-fa77-4323-b452-3bf612d8312b")
+	)
+	(wire
+		(pts
 			(xy 195.58 178.308) (xy 198.12 178.308)
 		)
 		(stroke
@@ -3898,16 +3750,6 @@
 			(type default)
 		)
 		(uuid "5334df63-eb5d-4ada-838d-1ed9f603ac4f")
-	)
-	(wire
-		(pts
-			(xy 94.615 130.048) (xy 101.6 130.048)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e584e1-4fee-4782-a753-a75a8d519dfa")
 	)
 	(wire
 		(pts
@@ -4011,6 +3853,16 @@
 	)
 	(wire
 		(pts
+			(xy 61.595 111.7026) (xy 42.926 111.7026)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b8aaea7-59e3-438d-b6ae-401195cd0417")
+	)
+	(wire
+		(pts
 			(xy 137.16 178.308) (xy 139.7 178.308)
 		)
 		(stroke
@@ -4081,16 +3933,6 @@
 	)
 	(wire
 		(pts
-			(xy 42.545 100.838) (xy 42.545 111.633)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c4ae4d4-c2ba-44cf-a54e-5da554141726")
-	)
-	(wire
-		(pts
 			(xy 104.14 121.158) (xy 107.315 121.158)
 		)
 		(stroke
@@ -4118,16 +3960,6 @@
 			(type default)
 		)
 		(uuid "935ed7af-1ba8-4aaa-8fea-61bd56fbca3d")
-	)
-	(wire
-		(pts
-			(xy 59.055 111.633) (xy 61.595 111.633)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9399258e-4c80-40e6-8279-5827b36d63b8")
 	)
 	(wire
 		(pts
@@ -4341,7 +4173,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 127.508) (xy 101.6 127.508)
+			(xy 99.06 127.508) (xy 114.3 127.508)
 		)
 		(stroke
 			(width 0)
@@ -4478,16 +4310,6 @@
 			(type default)
 		)
 		(uuid "f92a4b77-a647-449a-8e50-b12992a0af95")
-	)
-	(wire
-		(pts
-			(xy 42.545 111.633) (xy 48.895 111.633)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb4c7f46-04ab-4dd2-ac27-15c0dae4c903")
 	)
 	(rectangle
 		(start 32.893 85.598)
@@ -4754,7 +4576,7 @@
 	)
 	(hierarchical_label "BAT"
 		(shape input)
-		(at 94.615 130.048 180)
+		(at 114.3 142.748 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5519,7 +5341,7 @@
 	(symbol
 		(lib_name "+3V3_1")
 		(lib_id "power:+3V3")
-		(at 42.545 100.838 0)
+		(at 42.926 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5528,7 +5350,7 @@
 		(fields_autoplaced yes)
 		(uuid "84d8ef5e-8284-4356-8c4f-75dfb038a559")
 		(property "Reference" "#PWR07"
-			(at 42.545 104.648 0)
+			(at 42.926 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5537,7 +5359,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 42.545 97.3361 0)
+			(at 42.926 98.0981 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5545,7 +5367,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 42.545 100.838 0)
+			(at 42.926 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5554,7 +5376,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 42.545 100.838 0)
+			(at 42.926 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5563,7 +5385,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 42.545 100.838 0)
+			(at 42.926 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6351,74 +6173,6 @@
 			(project "PlantBot"
 				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/153a9d0e-b2bb-47fb-80f5-e280eabd2f18"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Bridged")
-		(at 53.975 111.633 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b03d4757-1faa-4204-ac3f-2f72f3d4d524")
-		(property "Reference" "JP1"
-			(at 53.975 107.9881 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Jumper_2_Bridged"
-			(at 53.975 109.9091 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
-			(at 53.975 111.633 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.975 111.633 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 53.975 111.633 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1b7ce81a-27f1-4db9-92c0-cca12be18c3e")
-		)
-		(pin "2"
-			(uuid "fcb35c35-a744-45f9-8a14-24f8933ec080")
-		)
-		(instances
-			(project "PlantBot"
-				(path "/1fa508ef-df83-4c99-846b-9acf535b3ad9/153a9d0e-b2bb-47fb-80f5-e280eabd2f18"
-					(reference "JP1")
 					(unit 1)
 				)
 			)

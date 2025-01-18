@@ -140,7 +140,7 @@
         "min_via_diameter": 0.3,
         "solder_mask_clearance": 0.051,
         "solder_mask_min_width": 0.25,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "solder_paste_clearance": 0.0,
         "solder_paste_margin_ratio": -0.0,
         "use_height_for_length_calcs": true
@@ -702,6 +702,10 @@
     [
       "64bb1079-49be-4a7d-93cf-555cc5d3e35c",
       "Battery Charger"
+    ],
+    [
+      "07316254-e856-445b-a1c8-8c9ec574d1e7",
+      "Pump"
     ],
     [
       "f7f6ed9a-cbaf-45eb-ae82-3b25f0b048dd",
