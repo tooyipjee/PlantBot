@@ -1,0 +1,9 @@
+Command: ninja confserver
+info: INFO: Symbol EXAMPLE_EXT1_WAKEUP_PIN_1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:39
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:93
+info: INFO: Symbol EXAMPLE_EXT1_WAKEUP_PIN_2 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:169
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:115
+Server running, waiting for requests on stdin...
+Loading config from /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/sdkconfig...

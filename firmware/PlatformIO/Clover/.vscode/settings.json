@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "freertos.h": "c",
+        "esp_log.h": "c",
+        "string.h": "c",
+        "soc_caps.h": "c",
+        "time.h": "c",
+        "gpio.h": "c",
+        "task.h": "c"
+    }
+}

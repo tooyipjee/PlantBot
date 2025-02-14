@@ -1,0 +1,2 @@
+source /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/build/bootloader/gdbinit/symbols
+source /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/build/bootloader/gdbinit/connect

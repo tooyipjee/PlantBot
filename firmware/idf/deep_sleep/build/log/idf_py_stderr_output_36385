@@ -1,0 +1,16 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/jasontoo/.espressif/python_env/idf5.5_py3.13_env/bin/python -DESP_PLATFORM=1 -DSDKCONFIG=/Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/sdkconfig -DCCACHE_ENABLE=0 /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep
+info: INFO: Symbol EXAMPLE_EXT1_WAKEUP_PIN_1 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:93
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:39
+info: INFO: Symbol EXAMPLE_EXT1_WAKEUP_PIN_2 defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:115
+    /Users/jasontoo/Github/Clover/firmware/idf/deep_sleep/main/Kconfig.projbuild:169
+CMake Deprecation Warning at /Users/jasontoo/esp/esp-idf/components/mbedtls/mbedtls/CMakeLists.txt:21 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+

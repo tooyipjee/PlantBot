@@ -1,0 +1,14 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/Users/jasontoo/esp/esp-idf",
+    "idf.toolsPath": "/Users/jasontoo/.espressif",
+    "files.associations": {
+        "chrono": "c",
+        "heart_rate.h": "c"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32c6-builtin.cfg"
+    ],
+    "idf.flashType": "JTAG",
+    "idf.port": "/dev/tty.usbmodem1101"
+}

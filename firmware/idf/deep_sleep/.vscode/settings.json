@@ -1,0 +1,10 @@
+{
+    "C_Cpp.intelliSenseEngine": "default",
+    "idf.espIdfPath": "/Users/jasontoo/esp/esp-idf",
+    "idf.toolsPath": "/Users/jasontoo/.espressif",
+    "files.associations": {
+        "task.h": "c",
+        "sdkconfig.h": "c",
+        "time.h": "c"
+    }
+}

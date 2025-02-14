@@ -1,0 +1,2 @@
+source /Users/jasontoo/Github/Clover/firmware/idf/clover/build/gdbinit/symbols
+source /Users/jasontoo/Github/Clover/firmware/idf/clover/build/gdbinit/connect
